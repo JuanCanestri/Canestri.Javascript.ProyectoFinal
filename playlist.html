@@ -9,26 +9,32 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">   
 </head>
 <body>
-
-    <h1>Bienvenido a Spotify</h1>
+    <header>
+        <img class="logo" src="./CSS/spotify.png" alt="Logo de Spotify sin fondo">
+        <button class="btnSesion">Inicio Sesión</button>
+      </header>
     <div class="main">
-        <form id="formCancion">
-            <h2>Agregar Cancion</h2>
-            <input type="text" placeholder="Autor" id="autor" required>
-            <br><br>
-            <input type="text" placeholder="Titulo" id="titulo" required>
-            <br><br>
-            <input type="text" placeholder="Album" id="album" required>
-            <br><br>
-            <input type="text" placeholder="Genero" id="genero" required>
-            <br><br>
-            <button type="submit" id="AgCancion">Agregar Cancion</button>
-            <button type="reset">Reset</button>
-        </form>
-        <div id="playlist">
-            <h2>Playlist</h2>
-            <ul id="listaPlaylist"></ul>
+        <div class="agregarCancion">
+            <form id="formCancion">
+                <h2>Agregar Cancion</h2>            
+                <input type="text" placeholder="Autor" class="inputForm" id="autor" required>
+                <br><br>
+                <input type="text" placeholder="Titulo" class="inputForm" id="titulo" required>
+                <br><br>
+                <input type="text" placeholder="Album" class="inputForm" id="album" required>
+                <br><br>
+                <input type="text" placeholder="Genero" class="inputForm" id="genero" required>
+                <br><br>
+                <button class="btnSubmit" type="submit" class="inputForm" id="AgCancion">Agregar Cancion</button>
+            </form>
         </div>
+        <div class="agregarCancion">
+            <div id="playlist">
+                <h2>Playlist</h2>
+                <ul id="listaPlaylist"></ul>
+            </div>
+        </div>
+
     </div>
     
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

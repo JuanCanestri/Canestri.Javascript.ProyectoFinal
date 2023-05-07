@@ -10,38 +10,43 @@
 </head>
 <body>
 
-    <div class="form-container">
-        <form id="login-form">
-          <h2>Iniciar Sesión</h2>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+    <header>
+      <img class="logo" src="./CSS/spotify.png" alt="Logo de Spotify sin fondo">
+      <button class="btnSesion">Inicio Sesión</button>
+    </header>
+
+    <div class="formulario">
+      <span class="cerrar">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="formLogin">
+        <h2>Inicio Sesión</h2>
+        <form action="#">
+          <div class="input">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
           </div>
-          <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
+          <div class="input">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
           </div>
-          <button type="submit">Iniciar Sesión</button>
-        </form>
-      
-        <form id="register-form">
-          <h2>Registrarse</h2>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
-          </div>
-          <button type="submit">Registrarse</button>
+          <button class="btnSesion" type="submit" id="btnLogin">Iniciar Sesión</button>
         </form>
       </div>
+    </div>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./JS/ingreso.js"></script>
     <script src="./JS/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
